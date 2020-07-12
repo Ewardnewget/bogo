@@ -1,8 +1,8 @@
 mkdir build
 pushd build
 cmake ../ \
-    -DLLVM_DIR=/opt/toolchain/llvm \
-    -DLLVM_ROOT=/opt/toolchain/llvm \
+    -DLLVM_DIR=/home/gitdog/toolchain/llvm-4.0.0 \
+    -DLLVM_ROOT=/home/gitdog/toolchain/llvm-4.0.0 \
     -DCMAKE_BUILD_TYPE=Debug
 popd
 pushd rtlib

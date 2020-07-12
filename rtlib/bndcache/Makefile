@@ -1,5 +1,5 @@
 #Makefile for bound cache
-TOOLCHAIN_PREFIX=/opt/toolchain/llvm/bin/
+TOOLCHAIN_PREFIX=/home/gitdog/toolchain/llvm-4.0.0/bin/
 CC=$(TOOLCHAIN_PREFIX)clang
 OPT=$(TOOLCHAIN_PREFIX)opt
 LLVM_DIS=$(TOOLCHAIN_PREFIX)llvm-dis

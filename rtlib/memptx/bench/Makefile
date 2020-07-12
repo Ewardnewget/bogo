@@ -1,11 +1,11 @@
-CXX=/opt/toolchain/gcc/bin/g++
-CC=/opt/toolchain/gcc/bin/gcc
+CXX=g++
+CC=gcc
 
 GLOBAL_OPT_FLAG=-g -O0
 
 MPX_CFLAG=-fcheck-pointer-bounds -mmpx
 CFLAGS=${GLOBAL_OPT_FLAG} -I../ ${ADDITIONAL_CFLAGS}
-LDFLAGS=${GLOBAL_OPT_FLAG} -Wl,-rpath=/opt/toolchain/gcc/lib64
+LDFLAGS=${GLOBAL_OPT_FLAG} -Wl
 LDFLAGS+=-ldl ../libinterceptor.so
 #LDFLAGS+=../libmpxutils.a -ldl
 
